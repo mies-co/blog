@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-	"process.env.BACKEND_URL": isProd ? "/blog" : "",
+	"process.env.BACKEND_URL": isProd ? "/blog" : "/blog",
 };

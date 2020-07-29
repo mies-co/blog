@@ -10,7 +10,7 @@ function Home(props) {
 				<article key={slug}>
 					<header>
 						<h3 className="mb-2">
-							<Link href={`/post/[slug]`} as={`${process.env.BACKEND_URL}/post/${slug}`}>
+							<Link href="/post/[slug]" as={`/post/${slug}`}>
 								<a className="text-3xl font-semibold text-orange-600 no-underline">{title}</a>
 							</Link>
 						</h3>

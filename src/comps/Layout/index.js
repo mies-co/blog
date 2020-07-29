@@ -7,7 +7,7 @@ const Layout = (props) => {
 		<div className="max-w-screen-sm px-4 py-8 mx-auto">
 			<header>
 				<h1 className="mb-8">
-					<Link href="/" as={`${process.env.BACKEND_URL}`}>
+					<Link href="/">
 						<a className="text-6xl font-black text-black no-underline">Mies.co Blog</a>
 					</Link>
 				</h1>
