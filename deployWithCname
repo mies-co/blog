@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+rm -rf node_modules/.cache 
+&& rimraf out 
+&& next build 
+&& next export 
+&& touch out/.nojekyll 
+&& touch out/CNAME
+&& echo \"blog.mies.co\" >> out/CNAME
+&& gh-pages -d out
