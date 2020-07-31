@@ -10,3 +10,9 @@ date: 2020-07-29
 ### h3
 
 Normal text
+
+```js
+const coucou = "hello";
+```
+
+![racoon](/static/media/racoon.jpg)
