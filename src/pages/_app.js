@@ -37,6 +37,17 @@ const GlobalStyle = createGlobalStyle`
         background-color: rgba(27,31,35,.05);
         border-radius: 6px;
     }
+
+    blockquote {
+        background-color: #f6f6f6;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        font-size: 95%;
+
+        p {
+            color: ${theme.gray};
+        }
+    }
 `;
 
 export default class MyApp extends App {

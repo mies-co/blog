@@ -1,8 +1,9 @@
 ---
 title: Go modules
 description: Introduction to go modules.
-updatedAt: 2020-07-29
-date: 2020-07-29
+dateCreated: 2020-07-29
+dateUpdated: 2020-08-08
+language: go
 ---
 
 ## Init

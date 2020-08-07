@@ -2,7 +2,7 @@ import { withStyledDocument } from "@mies-co/next-styled-components";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { TypographyStyle } from "react-typography";
 
-import typography from "../libs/typography";
+import typography from "_libs/typography";
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {

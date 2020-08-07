@@ -10,14 +10,13 @@ const Layout = (props) => {
 			<header>
 				<h1>
 					<Link href="/">
-						<a>Mies.co Blog</a>
+						<a>Mies.co blog</a>
 					</Link>
 				</h1>
 			</header>
 			<main>{children}</main>
 			<footer>
-				© {new Date().getFullYear()}, Built with <a href="https://nextjs.org/">Next.js</a>{" "}
-				&#128293;
+				© {new Date().getFullYear()} mies &#128293;
 			</footer>
 		</LayoutWrapper>
 	);
