@@ -1,1 +1,0 @@
-{"pageProps":{"content":"# First post\n\n# h1\n## h2\n### h3\n\nNormal text\n\n```js\nconst coucou = \"hello\";\n```\n\n![racoon](/static/media/racoon.jpg)\n","frontmatter":{"title":"First post","description":"The first post is the most memorable one.","date":"July 29, 2020","updatedAt":"July 29, 2020"}},"__N_SSG":true}
