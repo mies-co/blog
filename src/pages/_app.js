@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
     a {
         color: ${theme.primaryColor};
+        cursor: pointer !important;
     }
 
     p {

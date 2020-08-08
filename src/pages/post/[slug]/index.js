@@ -20,6 +20,9 @@ import {
 const LastPublished = styled.div`
 	float: right;
 	font-size: 80%;
+    position: relative;
+    z-index: 10;
+    text-align: right;
 `;
 
 const ShareButtons = styled.div`
@@ -79,7 +82,14 @@ export default function Post({ content, frontmatter }) {
 				},
 			}}
 		>
-			<LastPublished>Last published on {frontmatter.dateLastHuman}</LastPublished>
+			<LastPublished>
+				Last published on {frontmatter.dateLastHuman}
+				<br />
+				by{" "}
+				<a href={`https://twitter.com/${author.twitter}`}>
+					{author.firstname} {author.lastname}
+				</a>
+			</LastPublished>
 			<ShareButtons>
 				<TwitterShareButton
 					url={url}
