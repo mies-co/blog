@@ -27,10 +27,10 @@ const LastPublished = styled.div`
 
 const ShareButtons = styled.div`
 	position: fixed;
-	left: 0.5rem;
+	right: 0.25rem;
 	display: flex;
 	flex-direction: column;
-	top: 0.8rem;
+	bottom: 0.25rem;
 `;
 
 export default function Post({ content, frontmatter }) {
