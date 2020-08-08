@@ -17,6 +17,15 @@ const GlobalStyle = createGlobalStyle`
         opacity: 0.8;
     }
 
+    h1, h2 {
+        margin-top: 2.4rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    h3 {
+        margin-top: 1.8rem;
+    }
+
     a {
         color: ${theme.primaryColor};
     }
