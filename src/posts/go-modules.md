@@ -10,6 +10,10 @@ author:
     twitter: astenmies
 social:
     image: /static/media/modules.jpg
+tags:
+    - golang
+    - modules
+    - developers
 ---
 
 ## Init

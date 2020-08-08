@@ -20,9 +20,9 @@ import {
 const LastPublished = styled.div`
 	float: right;
 	font-size: 80%;
-    position: relative;
-    z-index: 10;
-    text-align: right;
+	position: relative;
+	z-index: 10;
+	text-align: right;
 `;
 
 const ShareButtons = styled.div`
