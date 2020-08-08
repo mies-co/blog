@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Head from "next/head";
 import matter from "gray-matter";
 import { useRouter } from "next/router";
@@ -33,7 +33,16 @@ const ShareButtons = styled.div`
 	bottom: 0.25rem;
 `;
 
+const emojis = ["🔥", "👉", "⚡", "🤓", "🔖", "💻", "🧑‍🎓", "👍"];
+
+const randomInteger = (min, max) => {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+const getRandomEmoji = () => emojis[randomInteger(0, emojis.length - 1)];
+
 export default function Post({ content, frontmatter }) {
+	const [randomEmoji, setRandomEmoji] = React.useState(getRandomEmoji());
 	const {
 		dateCreated,
 		dateUpdated,
@@ -92,8 +101,9 @@ export default function Post({ content, frontmatter }) {
 			</LastPublished>
 			<ShareButtons>
 				<TwitterShareButton
-					url={url}
-					title={description}
+					url={`${url}\n\n`}
+					onClick={() => setRandomEmoji(getRandomEmoji())}
+					title={`${randomEmoji} ${description}\n\n`}
 					via={author.twitter}
 					hashtags={tags}
 					related={[author.twitter]}
