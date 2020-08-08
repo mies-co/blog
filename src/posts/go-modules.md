@@ -4,6 +4,12 @@ description: Full recap on Go modules.
 dateCreated: 2020-07-29
 dateUpdated: 2020-08-08
 language: go
+author:
+    firstname: Asten
+    lastname: Mies
+    twitter: astenmies
+social:
+    image: /static/media/modules.jpg
 ---
 
 ## Init

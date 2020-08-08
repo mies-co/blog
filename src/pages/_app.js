@@ -57,6 +57,14 @@ const GlobalStyle = createGlobalStyle`
             color: ${theme.gray};
         }
     }
+
+    .react-share__ShareButton {
+        margin-right: 0.5rem;
+    }
+
+    button:focus {
+        outline: none;
+    }
 `;
 
 export default class MyApp extends App {

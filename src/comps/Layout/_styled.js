@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
-	padding: 4rem;
+	padding: 2rem 4rem;
 `;

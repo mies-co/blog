@@ -1088,9 +1088,9 @@
   integrity sha512-NwexVbcy72z0qu94nFx7H7htMTIYVFYrrCnU6uy4uGbg4171R/91Hn1hKP1xVcyTpprt1+xohEoO4U1K1o6Dtw==
 
 "@mies-co/next-utils@^0.0.3":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@mies-co/next-utils/-/next-utils-0.0.2.tgz#bacf605aa9c2fa2465b5ef635f59c3c4d559662b"
-  integrity sha512-OChcUyS1+IojYwUcWpxFSdDcx6wZQIepfvBj4p0DrB5OhRXjphstKbBNZ+DPESK+4AEcsLvlBCxdc7gwP74BaA==
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@mies-co/next-utils/-/next-utils-0.0.3.tgz#792ae652e5c046ac350849e5d19514478602fe6e"
+  integrity sha512-3kWeu/c5v4lda+7teO4VXHXy/JHZCrLIwyEOp4yg6J4YjJbYUW5fcQYoSMiyraERom00UsJZd/+BU/EN09qQwA==
 
 "@next/react-dev-overlay@9.5.1":
   version "9.5.1"
@@ -2157,7 +2157,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@2.2.6, classnames@^2.2.6:
+classnames@2.2.6, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -2766,7 +2766,7 @@ data-uri-to-buffer@3.0.0:
   dependencies:
     buffer-from "^1.1.1"
 
-debug@^2.2.0, debug@^2.3.3:
+debug@^2.1.3, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -4308,6 +4308,13 @@ jsonify@~0.0.0:
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
+jsonp@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  integrity sha1-pltPoPEL2nGaBUQep7lMVfPhW64=
+  dependencies:
+    debug "^2.1.3"
+
 jsprim@^1.2.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.1.tgz#313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2"
@@ -4813,6 +4820,11 @@ modularscale@^1.0.2:
   integrity sha1-So8TrzKl5SFPxuLPxSkGSr/X2Hc=
   dependencies:
     lodash.isnumber "^3.0.0"
+
+moment@^2.27.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -6135,6 +6147,14 @@ react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-share@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/react-share/-/react-share-4.2.1.tgz#e699ec4b102b2544843f3fba0cff26e5827f1819"
+  integrity sha512-pHaJqiX9JTrEpK+JNb15eBtm5Z49ARJtFiHyhbIKC/qMq9tJ5JWH5J2RS2sJudyWnZs4+IgSJ8VrSUW8I9gLUA==
+  dependencies:
+    classnames "^2.2.5"
+    jsonp "^0.2.1"
 
 react-syntax-highlighter@^13.2.1:
   version "13.2.1"

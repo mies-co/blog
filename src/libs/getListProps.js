@@ -2,6 +2,8 @@ import { getSecrets } from "@mies-co/next-secrets";
 import fs from "fs";
 import matter from "gray-matter";
 
+import getFrontmatter from "./getFrontmatter";
+
 export const getListProps = async () => {
 	// TODO fetch gists
 	// const secrets = await getSecrets();
@@ -12,25 +14,7 @@ export const getListProps = async () => {
 		const markdownWithMetadata = fs.readFileSync(`src/posts/${filename}`).toString();
 
 		const { data = {} } = matter(markdownWithMetadata);
-		const { dateCreated, dateUpdated, ...rest } = data;
-
-		const frontmatter = rest;
-
-		if (dateCreated)
-			frontmatter.dateCreated = dateCreated.toLocaleDateString("en-US", {
-				year: "numeric",
-				month: "long",
-				day: "numeric",
-			});
-
-		if (dateUpdated)
-			frontmatter.dateUpdated = dateUpdated.toLocaleDateString("en-US", {
-				year: "numeric",
-				month: "long",
-				day: "numeric",
-			});
-
-		frontmatter.dateLast = dateUpdated ? frontmatter.dateUpdated : frontmatter.dateCreated;
+		const frontmatter = getFrontmatter(data);
 
 		return {
 			slug: filename.replace(".md", ""),
