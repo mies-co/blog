@@ -19,14 +19,15 @@ tags:
 
 ![JS Massive Code Reuse](/static/media/js-massive-code-reuse-cover.png)
 
-This **Code reuse** series is composed of six small posts:
+This **Code reuse** series is composed of seven small posts:
 
 1. **Massive workspaces**
 2. **Massive git submodules (coming soon)**
 3. **Massive publishing to npm and github (coming soon)**
 4. **Massive secrets management (coming soon)**
 5. **Massive modularization of your code (coming soon)**
-6. **Massively scaling it up (coming soon)**
+6. **Massive bundling with rollup (coming soon)**
+7. **Massively scaling it up (coming soon)**
 
 They all reveal a **very simple** workflow that I sharpened up for the last 4 years. It enables to manage highly reusable code we have been writing for international institutions but for small presentational websites as well. This series was written for developers who already know the basics of JS. 
 
