@@ -29,6 +29,22 @@ const Layout = (props) => {
 				<meta property="og:description" content={description} key="ogdesc" />
 				{social.image && <meta property="og:image" content={social.image} key="ogimage" />}
 
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-KBJLS5DTHJ"
+				></script>
+
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-KBJLS5DTHJ');
+                        `,
+					}}
+				/>
+
 				{structured && (
 					<script
 						type="application/ld+json"
