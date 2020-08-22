@@ -48,7 +48,7 @@ Of course it's **massive** to be catchy, but also because in my experience it ca
 ## Motivation
 
 How do we usually keep motivated as developers? We try new things (aka. the cool new JS gadget)!
-I believe there are better ways to stay motivated. But more importantly, there are simple ways to save time and stay motivated using the same libraries/frameworks for years (it works for me at least).
+I believe there are better ways to stay motivated. But more importantly, there are simple ways to save time and stay motivated using the same libraries/frameworks for years.
 
 In my opinon, libraries/frameworks are just tools to get the job done. Changing these tools too often is like nailing jello to a tree. You better keep them forever and sharpen them up! Here is the workflow that works for me, I hope it works for you too.
 
