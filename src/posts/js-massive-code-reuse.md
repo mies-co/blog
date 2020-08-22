@@ -166,7 +166,7 @@ You will notice that the following workspaces have no `node_modules`!
 
 That's absolutely normal. The common dependencies (only `lodash` for now), have been installed higher in the hierarchy, in `federator/node_modules/`. This is called [hoisting](https://classic.yarnpkg.com/blog/2018/02/15/nohoist/).
 
-### **Yes, our workspaces are already fully setup and working! 🎉**
+### **Congratulations, your workspaces are fully setup and working! 🎉**
 
 [Follow me on Twitter](https://twitter.com/astenmies) to be kept updated when **Part 2 - Massive git submodules** comes out. That would also help to get me started because I'm new to Twitter.
 
