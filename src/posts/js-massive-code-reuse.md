@@ -10,12 +10,14 @@ author:
     lastname: Mies
     twitter: astenmies
 social:
-    image: /static/media/modules.jpg
+    image: /static/media/js-massive-code-reuse-cover.png
 tags:
     - javascript
     - modules
     - developers
 ---
+
+![JS Massive Code Reuse](/static/media/js-massive-code-reuse-cover.png)
 
 This **Code reuse** series is composed of six small posts:
 
