@@ -168,5 +168,5 @@ That's absolutely normal. The common dependencies (only `lodash` for now), have 
 
 ### **Yes, our workspaces are already fully setup and working! 🎉**
 
-[Follow me on Twitter](https://twitter.com/astenmies) to be kept updated when **Part 2 - Massive version management** comes out. That would also help to get me started because I'm new to Twitter.
+[Follow me on Twitter](https://twitter.com/astenmies) to be kept updated when **Part 2 - Massive git submodules** comes out. That would also help to get me started because I'm new to Twitter.
 
