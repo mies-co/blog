@@ -2,8 +2,8 @@
 title: JS Massive code reuse - part 1
 subtitle: Massive workspaces
 description: Reuse massive amounts of code in all your projects
-dateCreated: 2020-08-21
-dateUpdated: 2020-08-21
+dateCreated: 2020-08-22
+dateUpdated: 2020-08-22
 language: js
 author:
     firstname: Asten
