@@ -10,7 +10,7 @@ author:
     lastname: Mies
     twitter: astenmies
 social:
-    image: /static/media/js-massive-code-reuse-cover.png
+    image: /static/media/js-massive-code-reuse-twitter.png
 tags:
     - javascript
     - modules
