@@ -90,7 +90,7 @@ Please follow the [official instructions to install yarn](https://classic.yarnpk
 
 In **federator/package.json**
 
-Create a `workspaces` object that defines which of the children directories is a workspace to be handled by lerna.
+Create a `workspaces` object that defines which of the child directories are workspaces to be handled by yarn.
 
 ```json
 {
