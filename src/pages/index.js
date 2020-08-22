@@ -17,6 +17,7 @@ function Home(props) {
 				({
 					frontmatter: {
 						title,
+						subtitle,
 						description,
 						dateCreated,
 						dateUpdated,
@@ -29,14 +30,17 @@ function Home(props) {
 						<header>
 							<h3>
 								<Link href="/post/[slug]" as={`/post/${slug}`}>
-									<a className="text-3xl font-semibold text-orange-600 no-underline">
-										{title}
-									</a>
+									<a>{title}</a>
 								</Link>
 							</h3>
-							<DateLast>{dateLastHuman}</DateLast>
 						</header>
-						<section>
+						<section style={{ marginLeft: "1rem" }}>
+							{subtitle && (
+								<>
+									<h4>{subtitle}</h4>
+								</>
+							)}
+							<DateLast>{dateLastHuman}</DateLast>
 							<p>{description}</p>
 						</section>
 					</article>

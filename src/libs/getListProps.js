@@ -10,17 +10,20 @@ export const getListProps = async () => {
 
 	const files = fs.readdirSync(`${process.cwd()}/src/posts`);
 
-	const posts = files.map((filename) => {
-		const markdownWithMetadata = fs.readFileSync(`src/posts/${filename}`).toString();
+	const posts = files
+		.map((filename) => {
+			const markdownWithMetadata = fs.readFileSync(`src/posts/${filename}`).toString();
 
-		const { data = {} } = matter(markdownWithMetadata);
-		const frontmatter = getFrontmatter(data);
+			const { data = {} } = matter(markdownWithMetadata);
+			const frontmatter = getFrontmatter(data);
 
-		return {
-			slug: filename.replace(".md", ""),
-			frontmatter,
-		};
-	});
+			return {
+				slug: filename.replace(".md", ""),
+				frontmatter,
+			};
+		})
+		// Newest post first
+		.sort((a, b) => b.frontmatter.dateUpdated.localeCompare(a.frontmatter.dateUpdated));
 
 	return {
 		props: {

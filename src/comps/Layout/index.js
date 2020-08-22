@@ -46,7 +46,7 @@ const Layout = (props) => {
 				</h1>
 			</header>
 			<main>{children}</main>
-			<footer>© {new Date().getFullYear()} mies &#128293;</footer>
+			<footer style={{ marginTop: 64 }}>© {new Date().getFullYear()} mies &#128293;</footer>
 		</LayoutWrapper>
 	);
 };

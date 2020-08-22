@@ -29,7 +29,7 @@ export const CopyButton = styled.div`
 
 	/* Copy icon */
 	svg {
-		color: ${theme.secondaryColor};
+		color: ${theme.secondaryColorLight};
 		font-size: 1.4rem;
 		outline: none;
 		transition: all 0.3s ease-in-out;

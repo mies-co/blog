@@ -1,10 +1,14 @@
 // Only add scss variables here, not css class definitions.
 // Here are the default ant variables - https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
 
-$primary-color: rgb(255, 0, 81);
+$primary-color: rgb(255, 27, 65);
 $primary-color-dark: darken($primary-color, 25%);
 
-$secondary-color: rgb(169,174,202);
+// BLUE rgb(81, 144, 222)
+// PREVIOUS BLUE LIGHT rgb(169,174,202);
+
+$secondary-color: rgb(126, 173, 230);
+$secondary-color-light: lighten($secondary-color, 25%);
 $secondary-color-dark: darken($secondary-color, 25%);
 
 $gray: rgb(150, 150, 150);

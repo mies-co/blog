@@ -16,9 +16,13 @@ const getPostProps = async ({ params: { slug } }) => {
 	const { dateCreated, dateUpdated, ...rest } = data;
 	const frontmatter = getFrontmatter(data);
 
+	let betterContent = `# ${data.title}\n`;
+	if (data.subtitle) betterContent += `## ${data.subtitle}\n`;
+	betterContent += content;
+
 	return {
 		props: {
-			content: `# ${data.title}\n${content}`,
+			content: betterContent,
 			frontmatter,
 		},
 	};

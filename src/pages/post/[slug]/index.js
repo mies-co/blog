@@ -49,6 +49,7 @@ export default function Post({ content, frontmatter }) {
 		dateLastHuman,
 		dateLast,
 		title,
+        subtitle,
 		description,
 		author,
 		social,
@@ -65,6 +66,7 @@ export default function Post({ content, frontmatter }) {
 			url={url}
 			social={social}
 			title={title}
+            subtitle={subtitle}
 			description={description}
 			structured={{
 				"@context": "https://schema.org",
