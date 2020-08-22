@@ -22,7 +22,7 @@ tags:
 This **Code reuse** series is composed of six small posts:
 
 1. **Massive workspaces**
-2. **Massive dependencies and version management (coming soon)**
+2. **Massive git submodules (coming soon)**
 3. **Massive publishing to npm and github (coming soon)**
 4. **Massive secrets management (coming soon)**
 5. **Massive modularization of your code (coming soon)**
