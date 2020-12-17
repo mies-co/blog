@@ -1,4 +1,5 @@
 ---
+publish: true
 title: Go modules
 description: Full recap on Go modules
 dateCreated: 2020-07-29

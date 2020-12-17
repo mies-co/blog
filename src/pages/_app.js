@@ -1,4 +1,3 @@
-import App from "next/app";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 
 // const theme = {
@@ -68,14 +67,13 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export default class MyApp extends App {
-	render() {
-		const { Component, pageProps } = this.props;
-		return (
-			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-				<Component {...pageProps} />
-			</ThemeProvider>
-		);
-	}
+function MyApp({ Component, pageProps }) {
+    return (
+        <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <Component {...pageProps} />
+        </ThemeProvider>
+    );
 }
+
+export default MyApp

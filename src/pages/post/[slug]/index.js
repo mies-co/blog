@@ -44,17 +44,20 @@ const getRandomEmoji = () => emojis[randomInteger(0, emojis.length - 1)];
 export default function Post({ content, frontmatter }) {
 	const [randomEmoji, setRandomEmoji] = React.useState(getRandomEmoji());
 	const {
+		publish,
 		dateCreated,
 		dateUpdated,
 		dateLastHuman,
 		dateLast,
 		title,
-        subtitle,
+		subtitle,
 		description,
 		author,
 		social,
 		tags,
 	} = frontmatter;
+	
+	if (!publish) return null
 
 	const router = useRouter();
 	const { href: url, host } = new URL(router.asPath, process.env.NEXT_PUBLIC_APP_URL);
@@ -66,7 +69,7 @@ export default function Post({ content, frontmatter }) {
 			url={url}
 			social={social}
 			title={title}
-            subtitle={subtitle}
+			subtitle={subtitle}
 			description={description}
 			structured={{
 				"@context": "https://schema.org",

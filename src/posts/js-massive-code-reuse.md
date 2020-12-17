@@ -1,4 +1,5 @@
 ---
+publish: false
 title: JS Massive code reuse - part 1
 subtitle: Massive workspaces
 description: Reuse massive amounts of code in all your projects

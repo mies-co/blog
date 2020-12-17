@@ -16,6 +16,7 @@ function Home(props) {
 			{posts.map(
 				({
 					frontmatter: {
+						publish,
 						title,
 						subtitle,
 						description,
@@ -25,7 +26,7 @@ function Home(props) {
 						dateLastHuman,
 					},
 					slug,
-				}) => (
+				}) => publish && (
 					<article key={slug}>
 						<header>
 							<h3>
